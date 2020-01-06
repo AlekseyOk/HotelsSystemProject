@@ -173,8 +173,8 @@ public class HotelsSystemController {
             } else {
                 apexpages.addMessage(new ApexPages.message(Apexpages.Severity.INFO,'Room reserved successfully! Thank you for using our service!'));
             }
-           }
-         } 
-      }
-   }
+        }
+        }
+        }
+    }
 }
