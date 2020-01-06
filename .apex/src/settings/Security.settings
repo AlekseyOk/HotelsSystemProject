@@ -7,7 +7,12 @@
     <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
     <isTLSv12Required>false</isTLSv12Required>
     <isTLSv12RequiredCommunities>false</isTLSv12RequiredCommunities>
-    <networkAccess/>
+    <networkAccess>
+        <ipRanges>
+            <end>212.98.187.43</end>
+            <start>212.98.187.43</start>
+        </ipRanges>
+    </networkAccess>
     <passwordPolicies>
         <complexity>AlphaNumeric</complexity>
         <enableSetPasswordInApi>true</enableSetPasswordInApi>

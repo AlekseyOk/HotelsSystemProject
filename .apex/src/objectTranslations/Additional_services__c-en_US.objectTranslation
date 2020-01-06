@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Additional services</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Additional services</value>
+    </caseValues>
+    <fields>
+        <label><!-- Beer --></label>
+        <name>Beer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet --></label>
+        <name>Internet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sauna --></label>
+        <name>Sauna__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -4,7 +4,7 @@
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>hotelssystemproject.alexey.vishniak@gmail.com</assignedTo>
+            <assignedTo>hotelssystem.alexey.vishniak@gmail.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -13,7 +13,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>hotelssystemproject.alexey.vishniak@gmail.com</assignedTo>
+            <assignedTo>hotelssystem.alexey.vishniak@gmail.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>
