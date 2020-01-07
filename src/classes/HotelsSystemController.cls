@@ -169,7 +169,7 @@ public class HotelsSystemController {
             finalLengthReservationsList = reservationsList.size();
                 
             if (finalLengthReservationsList == initialLengthReservationsList) {
-                apexpages.addMessage(new ApexPages.message(Apexpages.Severity.INFO,'Sorry, no rooms available at this time.'));
+                apexpages.addMessage(new ApexPages.message(Apexpages.Severity.INFO,'Unfortunately there are no rooms matching your request!'));
             } else {
                 apexpages.addMessage(new ApexPages.message(Apexpages.Severity.INFO,'Room reserved successfully! Thank you for using our service!'));
             }
