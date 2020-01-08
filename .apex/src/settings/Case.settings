@@ -11,9 +11,9 @@
     <caseMergeInLightning>false</caseMergeInLightning>
     <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
     <defaultCaseFeedLayoutOn>true</defaultCaseFeedLayoutOn>
-    <defaultCaseOwner>hotelssystemproject.alexey.vishniak@gmail.com</defaultCaseOwner>
+    <defaultCaseOwner>hotelssystem.alexey.vishniak@gmail.com</defaultCaseOwner>
     <defaultCaseOwnerType>User</defaultCaseOwnerType>
-    <defaultCaseUser>hotelssystemproject.alexey.vishniak@gmail.com</defaultCaseUser>
+    <defaultCaseUser>hotelssystem.alexey.vishniak@gmail.com</defaultCaseUser>
     <emailToCase>
         <enableEmailToCase>false</enableEmailToCase>
     </emailToCase>

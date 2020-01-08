@@ -1,0 +1,56 @@
+<apex:page controller="HotelsSystemController" docType="html-5.0">
+    
+    <apex:form >
+        
+         <apex:actionFunction action="{!refreshHotelList}" name="refreshHotelList" rerender="HotelsSystemTableSection"/>
+         <apex:actionFunction action="{!addData}" name="addData"/>
+        
+        <apex:pageBlock id="HotelsSystemTableSection">
+            
+            <apex:pageBlockSection title="Hotels System" columns="1">
+                
+        		<apex:pageMessages id="msgId"/>
+                
+				<div style="font-size:19px"> Pre-reservation </div>                
+                
+                <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem > <div style="font-size:15px"> Contact details </div> </apex:pageBlockSectionItem>
+                
+                <apex:input label="Name" value="{!Name}" type="text"/>
+                
+                <apex:input label="Email" value="{!Email}" type="email"/>
+                                
+                <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem > <div style="font-size:15px"> Hotel  </div></apex:pageBlockSectionItem>
+                
+                <apex:selectList size="1" value="{!cityId}"  onchange="refreshHotelList();" label="City">
+                              <apex:selectOptions value="{!citySelectOptionList}"/>
+                </apex:selectList>
+                
+                <apex:selectList size="1" value="{!hotelId}" label="Hotel">
+                              <apex:selectOptions value="{!hotelSelectOptionList}"/>
+                </apex:selectList>
+                
+                <apex:selectList size="1" value="{!NumberOfGuests}" label="Number Of Guests">
+                              <apex:selectOptions value="{!guestsSelectOptionList}"/>
+                </apex:selectList> 
+                
+                <apex:input label="Check-In Date" value="{!CheckInDate}" type="datetime-local"/>
+                <apex:input label="Check-Out Date" value="{!CheckOutDate}" type="datetime-local"/>
+                
+                <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem > <div style="font-size:15px"> Additional services </div> </apex:pageBlockSectionItem>
+                
+                <apex:inputCheckbox value="{!Internet}" label="Internet"/>
+                <apex:inputCheckbox value="{!Sauna}" label="Sauna"/>
+                <apex:inputCheckbox value="{!Beer}" label="Beer"/>
+                
+                <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+                <apex:commandButton style="margin-left: 160px; font-size: 12px;" onclick="addData();" rerender="msgId" value="Book Now!"/>   
+            </apex:pageBlockSection>
+   		</apex:pageBlock>
+    </apex:form>
+</apex:page>
